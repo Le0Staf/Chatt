@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#imgg {
+    position: absolute;
+    z-index: -1;
+    width: 800px;
+    left: 0;
+    filter:hue-rotate(260deg);
+}
+
+#jonesy {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    bottom: 0;
+    width: 250px;
+    filter:hue-rotate(260deg);
+}
+
+#thanos {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    bottom: -50px;
+    width: 350px;
+    filter:hue-rotate(260deg);
+}
+
+#glider {
+    position: absolute;
+    z-index: -1;
+    width: 350px;
+    right: 0;
+    filter:hue-rotate(260deg);
+}
+
+body {
+    background-color: rgb(8, 0, 8)    ;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+#title {
+    color: purple;
+    font-family: sans-serif;
+    font-weight: 1000;
+    font-size: 2.5vw;
+    text-shadow: 2px 2px 5px rgb(95, 0, 95);
+    width: 72%;
+    text-align: center;
+    background-color: rgb(32, 0, 32);
+    border-radius: 10px;
+    z-index: 100;
+}
+
+#chat-input {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    position: absolute;
+}
+
+#chat-input div {
+    width: fit-content;
+    padding: 1vw 3vw;
+    background-color: rgb(48, 0, 48);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#chat-input div input {
+    width: 60vw;
+    height: 4vh;    
+    font-size: 19px;
+    padding: 0 1vw;
+    border: none;
+    border-radius: 10px 0 0 10px;
+    background-color: rgb(8, 0, 8);
+    outline: 1px solid purple;
+    color: rgb(255, 182, 255);
+}
+
+#chat-input div button {
+    width: 3vw;
+    height: 4.1vh;
+    border-radius: 0 10px 10px 0;
+    border: none;
+    background-color: rgb(8, 0, 8);
+    outline: 1px solid purple;
+    color: purple;
+    font-weight: 1000;
+}
+
+#chat-input div button:hover {
+    background-color: purple;
+    color: black;
+    cursor: pointer;
+}
+
+#chat-input div input:focus {
+    outline: 2px solid rgb(148, 0, 148);
+}
+
+#chat-input div input:focus + #send-button {
+    outline: 2px solid rgb(148, 0, 148);
+}
+
+#messages {
+    width: 65vw;
+    padding: 0.5vh 2.5vw;
+    height: 84.5vh;
+    background-color: rgba(29, 17, 32, 0.5);
+    border-left: 1px solid purple;
+    border-right: 1px solid purple;
+    position: relative;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#messages p {
+    width: 70%;
+    float: right;
+    height: fit-content;
+    padding: 0.5vh 0.5%;
+    background-color: rgb(48, 0, 48);
+    border: 1px solid purple;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    color: white;
+    font-family: sans-serif;
+    margin: 0.2vh 0;
+    font-size: 16px;
+    word-break: break-all;
+}
+
+#messages h2 {
+    width: 16%;
+    float: right;
+    height: fit-content;
+    padding: 0.5vh 0.5%;
+    text-align: center;
+    background-color: rgb(41, 0, 41);
+    border: 1px solid purple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    color: white;
+    font-family: sans-serif;
+    margin: 0.2vh 0;
+    font-size: 16px;
+    word-break: break-all;
+}
+
+#messages h3 {
+    color: white;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    padding-right: 15px;
+    border-right: 1px solid rgb(255, 182, 255);
+}
+
+#line {
+    width: 90%;
+    height: 1px;
+    background-color: rgb(112, 81, 112);
+    margin: 25px 0px;
+}
+
+#login {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgb(80, 0, 80);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+#hours {
+    display: none;
+}
+
+#minutes {
+    display: none;
+}
